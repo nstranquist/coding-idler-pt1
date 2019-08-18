@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <title>coding idler</title>
+    <link rel='stylesheet' href='main.css'>
+  </head>
+  <body ondragstart="return false;" ondrop="return false;">
+    <!--Game Score and HighScores Containers-->
+    <article class="results-container" id="results">
+      <h1>Game Stats</h1>
+      <h3>Total Clicks: <span id="total-clicks"></span></h3>
+      <h3>Time Elapsed: <span id="total-time"></span></h3>
+      <div class="close-btn"></div>
+      <a href="" class="reset-btn" id="reset-game">PLAY AGAIN</a>
+    </article>
+    <!--<article class="results-container high-score-container" id="highscore">
+      <h1>High Score</h1>
+      <h3>Clicks: <span id="hs-total-clicks"> &#x221e;</span></h3>
+      <h3>Time: <span id="hs-total-time"> &#x221e;</span></h3>
+      <div class="close-btn"></div>
+    </article>-->
+    <!-- Page Container -->
+    <div id="page-container">
+      <h1 class="page-title">Coding Idler</h1>
+      <h6 class="page-subtitle">(Just keep clicking)</h6>
+      <!--Score Output-->
+      <div class="row score-container">
+        <span class="score-text" id="score-text">0</span>
+      </div>
+      <!--Coding Button-->
+      <div class="row coding-btn-container">
+        <a onselectstart="return false;" href="#" class="coding-btn"
+          id="coding-btn">CODE!!</a>
+      </div>
+      <!--First Upgrade-->
+      <div class="row upgrades-section" onselectstart="return false;">
+        <a href="#" class="upgrade-btn" id="click-upgrade">
+          <span class="upgrade-cost" id="upgrade-cost">10</span>
+          +Click
+          <span class="upgrade-cost keybind">[A]</span>
+        </a>
+        <a href="#" class="upgrade-btn" id="passive-upgrade">
+          <span class="upgrade-cost" id="passive-cost">1000</span>
+          +Passive
+          <span class="upgrade-cost keybind">[S]</span>
+
+        </a>
+        <a href="#" class="upgrade-btn" id="combo-upgrade">
+          <span class="upgrade-cost" id="combo-cost">100</span>
+          +Combo
+          <span class="upgrade-cost keybind">[D]</span>
+
+        </a>
+      </div>
+      <!-- Current Stats-->
+      <div class="row stats-section">
+        <div class="stats-container upgrade-stats">
+          <h3>Upgrades:</h3>
+          <div class="stats-box" id="upgrade-stats"></div>
+        </div>
+        <div class="stats-container power-stats">
+          <h3>Powers:</h3>
+          <div class="stats-box" id="power-stats">
+            <div class="floatem">
+              __Click:
+              <span id="click-power">1</span></div>
+            <div class="floatem">
+              Passive:
+              <span id="passive-power">0</span></div>
+            <div class="floatem">
+              Combo:
+              <span id="combo-power">1</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

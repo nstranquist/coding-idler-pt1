@@ -1,0 +1,9 @@
+[x] add keybindings to the upgrade keys
+[] use localStorage to activate high scores
+[] create account and use firebase data to give high scores
+[] make game stat and high score section into pop-out modals
+[x] add functionality of 'passive' upgrade
+[] add more upgrades in general
+[] different levels of length / difficulty
+[] shop to buy things for coding room (carpet, laptop, etc)
+[] port number system to scientific, to go higher in the game
